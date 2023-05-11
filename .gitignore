@@ -1,0 +1,16 @@
+# No hidden files
+/**/.*
+
+# No zipped files
+/**/*.zip
+
+# Terraform
+/**/*.tfstate
+/**/*.tfstate*
+/terraform/*.log
+
+# Except for .gitignore, .env.example and .gitlab-ci.yml
+!.gitignore
+!/**/.env.example
+!.gitlab-ci.yml
+!.gitlab/
