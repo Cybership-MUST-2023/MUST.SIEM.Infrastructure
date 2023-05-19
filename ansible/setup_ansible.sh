@@ -23,7 +23,7 @@ sudo apt install yamllint ansible-lint -y
 
 
 # set up SSH (new key)
-chown $HOME_USER:$HOME_USER -R /home/$HOME_USER
+sudo chown $HOME_USER:$HOME_USER -R /home/$HOME_USER
 cd /home/$HOME_USER
 
 # echo "--- Write authentication key ---"

@@ -11,7 +11,7 @@ sudo systemctl start sshd
 
 # Ensure that the authorized_keys file is present
 echo "--- Set up SSH keys --- "
-chown $HOME_USER:$HOME_USER -R /home/$HOME_USER
+sudo chown $HOME_USER:$HOME_USER -R /home/$HOME_USER
 cd ~
 mkdir .ssh
 chmod 700 .ssh/
