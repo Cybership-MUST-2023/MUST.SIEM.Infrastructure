@@ -22,8 +22,8 @@ In this repository, you will find a guide on how to deploy a Wazuh environment v
 
 When restarting the servers, the IP addresses of the instances might change. 
 Because of this, they also need to be changed in the following files in this repository:
-- the [MUST_playbook inventory file](https://github.com/Cybership-Uganda-2023/MUST.SIEM.Ansible-playbooks/blob/main/inventory)
-- the [MUST_playbook variables file](https://github.com/Cybership-Uganda-2023/MUST.SIEM.Ansible-playbooks/blob/main/vars/vars-development.yml)
+- the [MUST_playbook inventory file](https://github.com/WLAN-ITF-22-23/MUST.SIEM.Ansible-playbooks/blob/main/inventory)
+- the [MUST_playbook variables file](https://github.com/WLAN-ITF-22-23/MUST.SIEM.Ansible-playbooks/blob/main/vars/vars-development.yml)
 
 ## Manual installation and setup of Ansible
 
@@ -63,7 +63,7 @@ sudo ansible Wazuh-agent -m ping
 
 > Ansible Vault encrypts variables and files so you can protect sensitive content such as passwords or keys rather than leaving it visible as plaintext in playbooks or roles. To use Ansible Vault you need one or more passwords to encrypt and decrypt content. If you store your vault passwords in a third-party tool such as a secret manager, you need a script to access them. Use the passwords with the ansible-vault command-line tool to create and view encrypted variables, create encrypted files, encrypt existing files, or edit, re-key, or decrypt files. You can then place encrypted content under source control and share it more safely. ([Ansible vault documentation](https://docs.ansible.com/ansible/latest/vault_guide/vault.html))
 
-Using the [setup_ansible_vault](/ansible/setup_ansible_vault.sh)-script, sensitive variables are encrypted. These variables are used by several playbook files, which can be seen in the [MUST playbook documentation](https://github.com/Cybership-Uganda-2023/MUST.SIEM.Ansible-playbooks/blob/main/README.md). To set up this vault, execute the following script, filling in the appropriate parameters:
+Using the [setup_ansible_vault](/ansible/setup_ansible_vault.sh)-script, sensitive variables are encrypted. These variables are used by several playbook files, which can be seen in the [MUST playbook documentation](https://github.com/WLAN-ITF-22-23/MUST.SIEM.Ansible-playbooks/blob/main/README.md). To set up this vault, execute the following script, filling in the appropriate parameters:
 
 ```Bash
 sudo nano setup_ansible_vault.sh
@@ -98,7 +98,7 @@ Interesting sources:
 
 This section largely follows the [official Wazuh documentation](https://documentation.wazuh.com/current/deployment-options/deploying-with-ansible/installation-guide.html).
 
-The playbook files installed by [setup_ansible.sh](./setup_ansible.MUST.sh) can be found at https://github.com/Cybership-Uganda-2023/MUST.SIEM.Ansible-playbooks. For more information on how to set up and install these files, consult the [README file on the MUST.SIEM.Ansible-playbooks repository](https://github.com/Cybership-Uganda-2023/MUST.SIEM.Ansible-playbooks/blob/main/README.md).
+The playbook files installed by [setup_ansible.sh](./setup_ansible.MUST.sh) can be found at https://github.com/WLAN-ITF-22-23/MUST.SIEM.Ansible-playbooks. For more information on how to set up and install these files, consult the [README file on the MUST.SIEM.Ansible-playbooks repository](https://github.com/WLAN-ITF-22-23/MUST.SIEM.Ansible-playbooks/blob/main/README.md).
 
 The Wazuh-dashboard can now be reached internally by using the dashboard instance's private IP, at `https://<private IP>`, and exteranally by using the dashboard instance's public DNS addressn at `https://<public DNS>`.[^1]
  

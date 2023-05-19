@@ -45,7 +45,7 @@ ls
 # set up MUST playbooks
 echo "--- downloading MUST_playbooks ---"
 cd ./wazuh-ansible/
-sudo git clone https://github.com/Cybership-Uganda-2023/MUST.SIEM.Ansible-playbooks
+sudo git clone https://github.com/WLAN-ITF-22-23/MUST.SIEM.Ansible-playbooks
 
 # set nano as preferred editor
 echo "--- setting nano as preferred editor for Ansible"

@@ -121,14 +121,14 @@ For the Ansible installation and setup instructions, see the [ansible folder](/a
 
 ## Wazuh
 
-The Wazuh-configuration is done via Ansible, and can be found in https://github.com/Cybership-Uganda-2023/MUST.SIEM.Ansible-playbooks/. 
+The Wazuh-configuration is done via Ansible, and can be found in https://github.com/WLAN-ITF-22-23/MUST.SIEM.Ansible-playbooks/. 
 
 The following setup is created:
 
 - A Wazuh all-in-one implementation, containing the indexer, dashboard and server
 - A single Wazuh agent, a minimal Ubuntu 22.04 LTS server
 
-Wazuh's functionality can be expanded through a large number of [settings and capabilities](https://documentation.wazuh.com/current/user-manual/capabilities/index.html). These capabilities are described in [the MUST_playbooks README file](https://github.com/Cybership-Uganda-2023/MUST.SIEM.Ansible-playbooks/blob/main/README.md).
+Wazuh's functionality can be expanded through a large number of [settings and capabilities](https://documentation.wazuh.com/current/user-manual/capabilities/index.html). These capabilities are described in [the MUST_playbooks README file](https://github.com//WLAN-ITF-22-23//MUST.SIEM.Ansible-playbooks/blob/main/README.md).
 
 
 ## Project status
