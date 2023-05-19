@@ -64,7 +64,7 @@ For more background on these commands, refer to Austin's tutorial[^7].
 
 To ensure that the right variables are used, create a `.env` file in the root directory of this repository.  
 For instructions on the syntax of this directory, see [.env.example](/.env.example).  
-Once the `.env`-file has been created, run the [readEnv](/readEnv.ps1) script to transform the .env-variables into environment variables usable by Terraform.
+Once the `.env`-file has been created, run the [readEnv](/terraform/readEnv.ps1) script to transform the .env-variables into environment variables usable by Terraform.
 
 The following **variables** must be set in the */terraform/.env file*[^2]:
 * TF_VAR_PM_API_TOKEN_ID (the ID of the API token)
@@ -88,10 +88,10 @@ The following **variables** must be set in the */terraform/.env file*[^2]:
 * VAULT_API_WUI_PASSWORD[^1] (the password for the wazuh-wui user, used by the API)
 * VAULT_VIRUSTOTAL_API_KEY[^3] (the VirusTotal API key, which will be encrypted in an Ansible Vault)
 
-These variables can be used by terraform by executing the [readEnv script](/readEnv.ps1) (on a Windows computer):
+These variables can be used by terraform by executing the [readEnv script](/terraform/readEnv.ps1) (on a Windows computer):
 ```Bash
 cd ./terraform/
-../readEnv.ps1/
+./readEnv.ps1/
 ```
 
 ## Terraform

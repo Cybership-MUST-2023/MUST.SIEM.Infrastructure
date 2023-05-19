@@ -43,7 +43,7 @@ sudo ./setup_ansible.sh
 ### Ansible clients
 
 To ensure that the right SSH-infrastructure is present, copy the contents of [setup_client.sh](./setup_clients/setup_client.sh)
-into a script on the Ansible clients. This script will prompt one nano-popup, to enter the SSH public key used by the Ansible server to connect to the different Ansible clients.
+into a script on the Ansible clients. This script will prompt one nano-popup, to enter the SSH public key used by the Ansible server to connect to the different Ansible clients.[^3]
 
 ```Bash
 sudo nano setup_client.sh
@@ -108,3 +108,5 @@ The Wazuh-dashboard can now be reached internally by using the dashboard instanc
 [^1]: If you recieve the following alert: `ERROR: No template found for the selected index-pattern title [wazuh-alerts-*]`, try entering the following command on the **Wazuh-manager**: `curl --silent https://raw.githubusercontent.com/wazuh/wazuh/${wazuh_major}/extensions/elasticsearch/7.x/wazuh-template.json | curl -X PUT 'https://elasticsearch_IP:9200/_template/wazuh' -H 'Content-Type: application/json' -d @- -uadmin:admin -k --silent`. (source: https://groups.google.com/g/wazuh/c/aSAIqc2_1ig)
 
 [^2]: If using the [proxmox scripts](/proxmox/), these files are already present on the VMs
+
+[^3]: The setup scripts should modify the `/home/must` directory to transfer ownership to the must-user. If this does not work, execute the following command on each Ansible-client: `sudo chown must:must /home/must -R`

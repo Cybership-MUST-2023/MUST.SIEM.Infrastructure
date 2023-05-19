@@ -4,17 +4,17 @@
 
 ## OS
 
-WIP
+Unknown
 
 ## Hardware recommendations
 
 ### RAM and CPU
 
-WIP
+Unknown
 
 ### Disk space
 
-WIP
+Unknown
 
 # Wazuh via Ansible: requirements
 

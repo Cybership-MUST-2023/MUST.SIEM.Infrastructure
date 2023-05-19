@@ -15,7 +15,9 @@ SECRETS_FILE="$DIR/secrets-development.yml"
 # create a password file for Ansible
 echo "--- creating the Ansible password file ---"
 sudo touch $ANSIBLE_PWD_FILE
+sudo chmod 600 $ANSIBLE_PWD_FILE 
 sudo sh -c "echo '$ANSIBLE_PWD' > $ANSIBLE_PWD_FILE"
+sudo chmod 400 $ANSIBLE_PWD_FILE
 
 # set nano as preferred editor
 echo "--- setting nano as preferred editor for Ansible"

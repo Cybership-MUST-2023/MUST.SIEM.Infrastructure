@@ -80,6 +80,8 @@ chmod +x ansible-scripts/setup_client.sh
 In the [proxmox directory](/proxmox/), several shell scripts named `create_vm.<target>.sh` have been created.
 These scripts must be copied to the Proxmox-server, given execute permissions and then executed.
 All of these scripts start by declaring variables, which can be modified to tailer the virtual machine more to your needs.
+These variables are based on the requirements of the different types of software used.
+More information on these can be found in the [requirements folder](/requirements/).
 
 To create the **Ansible** VM, execute the following commands, copying the contents of [create_vm.ansible.sh](/proxmox/create_vm.ansible.sh)[^11]:
 

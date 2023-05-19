@@ -2,7 +2,8 @@
 
 [Link](https://www.proxmox.com/en/proxmox-ve)
 
-## Getting started
+## Required for getting started
+
 - A server
 - Virtualization support for CPU
 - 64-but CPU
@@ -28,8 +29,3 @@ Recommended minimum:
 - [LLTV forums](https://community.learnlinux.tv)
 - [Proxmox wiki](https://pve.proxmox.com/wiki)
 - [Proxmox community](https://forum.proxmox.com)
-
-# Suggestions
-
-- Ansible in container
-- Wazuh in VM

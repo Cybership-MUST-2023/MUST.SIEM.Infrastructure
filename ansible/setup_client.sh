@@ -1,4 +1,6 @@
 #!/bin/bash
+HOME_USER=must
+
 echo "--- Setting timezone to Africa/Kampala ---"
 sudo timedatectl set-timezone Africa/Kampala
 
